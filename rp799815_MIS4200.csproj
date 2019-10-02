@@ -180,38 +180,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\CourseDetail.aspx.cs">
-      <DependentUpon>CourseDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Models\CourseDetail.aspx.designer.cs">
-      <DependentUpon>CourseDetail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Courses.aspx.cs">
-      <DependentUpon>Courses.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Models\Courses.aspx.designer.cs">
-      <DependentUpon>Courses.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\CourseDetails.cs" />
+    <Compile Include="Models\Course.cs" />
     <Compile Include="Models\customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Instructors.aspx.cs">
-      <DependentUpon>Instructors.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Models\Instructors.aspx.designer.cs">
-      <DependentUpon>Instructors.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\Instructors.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\order.cs" />
-    <Compile Include="Models\Students.aspx.cs">
-      <DependentUpon>Students.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Models\Students.aspx.designer.cs">
-      <DependentUpon>Students.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -225,10 +201,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\CourseDetail.aspx" />
-    <Content Include="Models\Courses.aspx" />
-    <Content Include="Models\Instructors.aspx" />
-    <Content Include="Models\Students.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />

@@ -2,23 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.ComponentModel.DataAnnotations;
 
 namespace rp799815_MIS4200.Models
 {
-    public partial class Instructor : System.Web.UI.Page
+    public class Instructors
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        [Key]
         public int instructorID { get; set; }
         public string instructorFirstName { get; set; }
         public string instructorIastName { get; set; }
         public string phone { get; set; }
         public string email { get; set; }
-        public ICollection<Courses> Course { get; set; }
+        public ICollection<Course> Course { get; set; }
     }
 }

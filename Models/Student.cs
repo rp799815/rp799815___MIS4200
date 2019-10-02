@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace rp799815_MIS4200.Models
 {
-    public partial class Students : System.Web.UI.Page
+    public class Student
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+        [Key]
         public int studentID { get; set; }
         public string studentFirstName { get; set; }
         public string studentLastName { get; set; }
         public string email { get; set; }
-}
+        public ICollection<CourseDetails> CourseDetail { get; set; }
+
+    }
 }
