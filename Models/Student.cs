@@ -14,7 +14,5 @@ namespace rp799815_MIS4200.Models
         public string studentFirstName { get; set; }
         public string studentLastName { get; set; }
         public string email { get; set; }
-        public ICollection<CourseDetails> CourseDetail { get; set; }
-
     }
 }
