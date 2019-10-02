@@ -11,7 +11,9 @@ namespace rp799815_MIS4200.Models
         [Key]
         public int courseID { get; set; }
         public string courseName { get; set; }
+        public string description { get; set; }
         public DateTime startDate { get; set; }
+        public int hours { get; set; }
         public ICollection<CourseDetails> CourseDetail { get; set; }
         public int instructorID { get; set; }
         public virtual Instructors Instructor { get; set; }

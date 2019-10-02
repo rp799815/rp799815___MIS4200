@@ -1,0 +1,63 @@
+﻿@model IEnumerable<rp799815_MIS4200.Models.CourseDetails>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Course.courseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.studentFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.courseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hours)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.startDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Course.courseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.studentFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.courseName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hours)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.startDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.courseDetailID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.courseDetailID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.courseDetailID })
+        </td>
+    </tr>
+}
+
+</table>
