@@ -1,0 +1,51 @@
+﻿@model IEnumerable<rp799815_MIS4200.Models.Appointment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Doctor.doctorFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Patient.patientFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.reasonForVisit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.appointmentDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Doctor.doctorFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Patient.patientFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.reasonForVisit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.appointmentDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.apptointmentID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.apptointmentID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.apptointmentID })
+        </td>
+    </tr>
+}
+
+</table>
