@@ -14,9 +14,9 @@ namespace rp799815_MIS4200.DAL
             // this method is a 'constructor' and is called when a new context is created
             // the base attribute says which connection string to use
         }
-        public DbSet<Course> Courses { get; set; }
-        public DbSet<Instructors> Instructors { get; set; }
-        public DbSet<Student> Students { get; set; }
+        public DbSet<Doctor> Doctor { get; set; }
+        public DbSet<Appointment> Appointment { get; set; }
+        public DbSet<Patient> Patient { get; set; }
     }
 }
         
